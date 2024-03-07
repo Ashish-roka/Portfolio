@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import {FaBars,FaReact} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import{HiX} from 'react-icons/hi'
+import './styles.css'
 
 const data=[
 {
@@ -54,13 +55,13 @@ const [toggleIcon,setToggleIcon]=useState(false)
 
             <ul className="navbar__container__menu">
                 {
-                    data.map((item,key)=>{
-                        <li key={key} className="navbar__container__menu__items">
+                    data.map((item,key)=>
+                     (   <li key={key} className="navbar__container__menu__items">
                             <Link  className='navbar__container__menu__items__links' to={item.to}>
-                            {item.label}
+                           {item.label}
                             </Link>
-                        </li>
-                    })
+                        </li>)
+                    )
                 }
             </ul>
 
