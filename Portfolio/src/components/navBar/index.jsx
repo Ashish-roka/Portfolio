@@ -11,13 +11,13 @@ const data=[
 },
 
 {
-    label : 'ABOUT',
+    label : 'ABOUT ME ',
     to:'/about'
 },
 
 {
-    label : 'CONTACT',
-    to:'/contact'
+    label : 'SKILLS',
+    to:'/skills'
 },
 
 {
@@ -29,11 +29,11 @@ const data=[
     label : 'RESUME',
     to:'/resume'
 },
-
 {
-    label : 'SKILLS',
-    to:'/skills'
+    label : 'CONTACT',
+    to:'/contact'
 },
+
 
 
 ];
@@ -53,7 +53,7 @@ const [toggleIcon,setToggleIcon]=useState(false)
                 </div>
             
 
-            <ul className="navbar__container__menu">
+            <ul className={`navbar__container__menu ${toggleIcon ? 'active' : ''}`}>
                 {
                     data.map((item,key)=>
                      (   <li key={key} className="navbar__container__menu__items">

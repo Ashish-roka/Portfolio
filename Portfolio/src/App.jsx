@@ -1,3 +1,4 @@
+import './App.css'
 import { useState } from 'react'
 import{Routes,Route } from 'react-router-dom'
 
@@ -9,15 +10,23 @@ import Resume from './container/resume'
 import About from './container/about'
 import Navbar from './components/navBar'
 
+
+
+
+
+
 function App() {
  return(
     <div className="App">
 
 
+      
         {/* navbar */}
 
 
         <Navbar/>
+
+    
         <Routes>
             <Route index  path='/' element={<Home/>}/>
             <Route  path='/about' element={<About/>}/>
@@ -26,7 +35,9 @@ function App() {
             <Route path='/resume' element={<Resume/>}/>
             <Route path='/skills' element={<Skills/>}/>
         </Routes>
-    </div>
+        </div>
+    
+    
  )
 }
 
