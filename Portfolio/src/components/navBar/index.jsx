@@ -7,7 +7,7 @@ import './styles.css'
 const data=[
 {
     label : 'HOME',
-    to:'/home'
+    to:'/'
 },
 
 {

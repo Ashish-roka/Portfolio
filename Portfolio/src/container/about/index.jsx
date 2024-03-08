@@ -72,7 +72,7 @@ return(
       }}
       >
 
-      <h3>Personal Information</h3>
+      <h3 className='personalInformationHeaderText'>Personal Information</h3>
       <ul>
         {
           personalDetails.map((item,i)=>(
