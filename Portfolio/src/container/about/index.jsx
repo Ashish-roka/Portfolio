@@ -3,6 +3,8 @@ import{BsInfoCircleFill} from 'react-icons/bs'
 import{Animate} from 'react-simple-animate'
 import PageHeaderContent from '../../components/pageHeaderContent';
 import './styles.css'
+import {DiApple,DiAndroid} from 'react-icons/di'
+import{FaDev,FaDatabase} from 'react-icons/fa'
 
 
 
@@ -89,7 +91,22 @@ return(
       </ul>
       </Animate>
       </div>
-      <div className='about__content__servicesWrapper'> Services Wrapper
+      <div className='about__content__servicesWrapper'> 
+      <div className="about__content__servicesWrapper__innerContent">
+      <div>
+        <FaDev size={60} color='var(--yellow-theme-main-color)'/>
+      </div>
+      <div>
+      <FaDatabase size={60} color='var(--yellow-theme-main-color)'/>
+      </div>
+      <div>
+      <DiAndroid size={60} color='var(--yellow-theme-main-color)'/>
+      </div>
+      <div>
+      <DiApple size={60} color='var(--yellow-theme-main-color)'/>
+      </div>
+      </div>
+  
       </div>
     </div>
   </section>

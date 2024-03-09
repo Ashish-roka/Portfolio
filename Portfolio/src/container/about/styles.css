@@ -48,3 +48,13 @@
       border: none;
     }
   }
+  
+  .about__content__servicesWrapper__innerContent{
+      width: 350px;                                                           /*/ How to make a circle. */
+        height: 350px;
+        background:radial-gradient(180px,var(--yellow-theme-main-color),transparent 90%);
+        position: relative;
+    border-radius: 50%;
+    border: 1.5px solid var(--yellow-theme-main-color);
+    }
+
