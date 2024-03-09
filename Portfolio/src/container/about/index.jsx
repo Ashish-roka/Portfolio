@@ -26,6 +26,10 @@ const personalDetails=[
     label : "Email",
     value : "princeroka123@gmail.com",
   },
+  {
+    label : "Contact",
+    value : "98********",
+  },
 
 ];
 
